@@ -1,0 +1,27 @@
+
+.score .score-point{
+  padding:0;
+
+}
+.score-content{
+  height:100px;
+}
+
+.score-content:last-child{
+    margin-top:10px;
+}
+.score-content .point{
+  margin-top:10px;
+}
+hr{
+  text-align: center;
+  margin-left:15px;
+}
+.score-content img{
+  width:90px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
