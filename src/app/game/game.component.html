@@ -3,19 +3,24 @@
 <section class="col-md-7 game-container">
   <div class="col-md-6 game">
     <img src="http://rtifm.rs/wp-content/uploads/2016/06/PIKACU.png" alt="">
-    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</p>
+    <p >{{dash_words}}</p>
   </div>
 
   <div class="col-md-6 ">
     <h4>Current Statics</h4>
     <p>Score: 58 Points</p>
-    <p>Chances remaining: 9 </p>
+    <p  #button >Chances remaining: {{chances_remaining}} </p>
     <p></p>
   </div>
 
 
-  <div class="col-md-12 keyboard">
-    <button class="btn btn-default button" *ngFor="let button of generateKey()" >
+  <div class="col-md-12 keyboard" >
+    <button
+      class="btn btn-default button"
+
+
+      (click) = "buttonValue($event, button)"
+      *ngFor="let button of generateKey()"  >
       {{button}}
     </button>
   </div>

@@ -12,3 +12,17 @@
   margin:5px;
   outline:none;
 }
+
+
+.isWrong, .isRight{
+    color:#fff;
+}
+
+.isWrong{
+  background:red;
+}
+
+
+.isRight{
+  background: green;
+}
